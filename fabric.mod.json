@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "iwohovisuals",
+  "version": "${version}",
+  "name": "Iwoho Visuals",
+  "description": "Visual client: smooth animated menu, configurable HUD, player tags with HP/armor, target marker, Iris shader presets.",
+  "authors": ["Iwoho"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.iwoho.visuals.IwohoVisuals"]
+  },
+  "mixins": ["iwohovisuals.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "iris": "*",
+    "sodium": "*",
+    "lithium": "*"
+  }
+}
